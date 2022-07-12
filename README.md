@@ -1,3 +1,11 @@
 # Titanium
 
-Performance test of new C# updates and for other solutions
+...
+
+## Tech Stack
+
+C#
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

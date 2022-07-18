@@ -1,10 +1,10 @@
 # Titanium
 
-...
+Example application where Mediator and CQRS patterns have been implemented.
 
 ## Tech Stack
 
-C#
+C#, MediatR, Blazor, xUnit, Dapper, REST API
 
 ## License
 

@@ -1,3 +1,5 @@
+using MediatR;
+using Titanium.Library;
 using Titanium.Website.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddMediatR(typeof(Startup).Assembly);
 
 var app = builder.Build();
 

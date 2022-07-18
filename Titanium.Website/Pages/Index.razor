@@ -1,9 +1,48 @@
 ﻿@page "/"
 
+@using Titanium.Library.DataAccess
+@using Titanium.Library.Models
+
 <PageTitle>Index</PageTitle>
 
-<h1>Hello, world!</h1>
+@if (userList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in userList)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Name</td>
+                    <td>@user.LastName</td>
+                    <td>@user.Age</td>
+                    <td>@user.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
 
-Welcome to your new app.
+@code 
+{
+    List<UserModel> userList = new();
+    UsersDataAccess usersDataAccess = new UsersDataAccess();
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+    protected async override Task OnInitializedAsync()
+    {
+        userList = await usersDataAccess.GetUsers();
+    }
+}

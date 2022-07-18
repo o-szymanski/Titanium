@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using Titanium.Data;
+using Titanium.Website.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,4 +1,4 @@
-namespace Titanium.Data
+namespace Titanium.Website.Data
 {
     public class WeatherForecast
     {

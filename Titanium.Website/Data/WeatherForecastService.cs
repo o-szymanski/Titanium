@@ -1,11 +1,11 @@
-namespace Titanium.Data
+namespace Titanium.Website.Data
 {
     public class WeatherForecastService
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
 
         public Task<WeatherForecast[]> GetForecastAsync(DateTime startDate)
         {

@@ -15,9 +15,9 @@ namespace Titanium.Library.DataAccess
             UsersList.Add(new UserModel { Id = 5, Name = "Sasha", LastName = "Nitksy", Age = 22, Email = "Sasha.Nitksy@gmail.com" });
         }
 
-        public Task<List<UserModel>> GetUsers()
+        public List<UserModel> GetUsers()
         {
-            return Task.FromResult(UsersList);
+            return UsersList;
         }
 
         public UserModel GetUser(int id)

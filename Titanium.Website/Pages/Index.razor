@@ -1,7 +1,10 @@
 ﻿@page "/"
 
+@inject MediatR.IMediator _mediator
+
 @using Titanium.Library.DataAccess
 @using Titanium.Library.Models
+@using Titanium.Library.Queries
 
 <PageTitle>Index</PageTitle>
 
@@ -39,10 +42,9 @@ else
 @code 
 {
     List<UserModel> userList = new();
-    UsersDataAccess usersDataAccess = new UsersDataAccess();
 
     protected async override Task OnInitializedAsync()
     {
-        userList = await usersDataAccess.GetUsers();
+        userList = await _mediator.Send(new GetUsersQuery());
     }
 }

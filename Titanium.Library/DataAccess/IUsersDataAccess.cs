@@ -5,7 +5,7 @@ namespace Titanium.Library.DataAccess
     public interface IUsersDataAccess
     {
         UserModel GetUser(int id);
-        Task<List<UserModel>> GetUsers();
+        List<UserModel> GetUsers();
         UserModel InsertUser(UserModel userModel);
     }
 }

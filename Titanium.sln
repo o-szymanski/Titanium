@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titanium.Website", "Titaniu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titanium.Library", "Titanium.Library\Titanium.Library.csproj", "{0D4B629C-296A-418C-BB19-08835E744D05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titanium.API", "Titanium.API\Titanium.API.csproj", "{39D3EBD2-8561-4FCB-960D-6F293C3D00F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Titanium.API", "Titanium.API\Titanium.API.csproj", "{39D3EBD2-8561-4FCB-960D-6F293C3D00F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4,7 +4,7 @@ Example application where Mediator and CQRS patterns have been implemented.
 
 ## Tech Stack
 
-C#, MediatR, Blazor, xUnit, Dapper, REST API
+C#, HTML, CSS, MediatR, Blazor, Web Api
 
 ## License
 
